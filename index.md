@@ -38,7 +38,12 @@
 
                 console.log( 'Messaging was in progress' );
                 initEmbeddedMessaging();
-                embeddedservice_bootstrap.utilAPI.launchChat();
+
+  		if ( embeddedservice_bootstrap.utilAPI ) {
+                
+			embeddedservice_bootstrap.utilAPI.launchChat();
+
+  		}
                 
             }
             
